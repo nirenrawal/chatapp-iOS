@@ -29,7 +29,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nN9-g7-Slz">
                                 <rect key="frame" x="20" y="689" width="374" height="60"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -38,16 +38,33 @@
                                     <segue destination="1xp-GN-XqD" kind="show" id="DGb-EK-DeR"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="LnF-ZR-g0h">
+                                <rect key="frame" x="54" y="341" width="306" height="163"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTu-tE-fmQ">
+                                <rect key="frame" x="70" y="201" width="274" height="74"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="62"/>
+                                <color key="textColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="n9w-Mh-6g6" firstAttribute="top" secondItem="nN9-g7-Slz" secondAttribute="bottom" constant="26" id="1X9-d6-udD"/>
+                            <constraint firstItem="LnF-ZR-g0h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="ERz-Z1-3Hr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nN9-g7-Slz" secondAttribute="trailing" constant="20" id="KhG-po-6KQ"/>
+                            <constraint firstItem="wTu-tE-fmQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Lrg-Hq-O0C"/>
+                            <constraint firstItem="nN9-g7-Slz" firstAttribute="top" secondItem="LnF-ZR-g0h" secondAttribute="bottom" constant="185" id="MmV-tw-VW3"/>
                             <constraint firstItem="nN9-g7-Slz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TUm-a7-Q4O"/>
                             <constraint firstItem="nN9-g7-Slz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="601" id="UYV-z7-xMk"/>
+                            <constraint firstItem="wTu-tE-fmQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="113" id="clG-D2-5MJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n9w-Mh-6g6" secondAttribute="trailing" constant="20" id="hQz-Tq-IKh"/>
+                            <constraint firstItem="LnF-ZR-g0h" firstAttribute="top" secondItem="wTu-tE-fmQ" secondAttribute="bottom" constant="66" id="qv6-xu-ue8"/>
                             <constraint firstItem="n9w-Mh-6g6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sMk-9B-Emb"/>
+                            <constraint firstItem="LnF-ZR-g0h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="253" id="utu-fT-oSA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LnF-ZR-g0h" secondAttribute="trailing" constant="54" id="vcP-sf-Tz5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wTu-tE-fmQ" secondAttribute="trailing" constant="70" id="zuq-ep-n92"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5ym-fI-829"/>
@@ -260,6 +277,7 @@
         <segue reference="bgB-ct-b6T"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="chat" width="425" height="326"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -268,9 +286,6 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
